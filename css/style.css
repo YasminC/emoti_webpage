@@ -1,22 +1,4 @@
-/*
-Theme Name: LandingSumoWP 17
-Theme URI: http://gentsthemes.com
-Author: Brad Williams
-Author URI: http://gentsthemes.com
-Description: Bootstrap WordPress landing page theme
-Version: 3.3.4
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: bootstrapwp
-Domain Path: /languages/
-Tags: bootstrap, responsive, wordpress, landing page
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-LandingSumoWP 7 is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
-
-*/
 
 * { 
 	margin: 0;
@@ -85,7 +67,7 @@ body {
 	clear: both;
 	display: block;
 	font-size: 0;
-	height: 0;
+
 	line-height: 0;
 	width:100%;
 }
@@ -268,6 +250,7 @@ hr {
 	display:block;
 	margin-top:10%;
 	font-size: 30px;
+	color:#f3f3f3;
 }
 .video{
 	width:90%;
@@ -306,6 +289,7 @@ hr {
 	display:block;
 	margin-bottom:10px;
 	text-align: center;
+	margin: 0 auto;
 }
 #twitter-widget-0{
 	margin:0 auto !important;
@@ -424,6 +408,24 @@ span{
 	width:40%;
 	margin-bottom:10%;
 }
+.emoti-logo{
+	margin-bottom:5%;
+}
+.emoti-logo ul{
+	list-style:none;
+	margin:5% auto 0;
+	display: block;
+	width:100%;
+	text-align:center;
+}
+.emoti-logo ul .small{
+	width:25%;
+	padding: 0;
+}
+.emoti-logo ul li{
+	display:inline-block;
+	width:45%;
+}
 
 
 /*--------------------------------------------------------------
@@ -467,7 +469,9 @@ img {
 img {
 	height: auto;
 }
-
+iframe #twitter-widget-i1440763032737269006{
+margin:0 auto;
+}
 /*--------------------------------------------------------------
 12.1 Captions
 --------------------------------------------------------------*/
@@ -494,6 +498,81 @@ img {
 	max-width:400px;
 	display:block;
 	margin:0 auto;
+}
+
+/*table*/
+
+.links .left{
+	margin-bottom:5%;
+}
+.section-bg-color{
+	padding-bottom:0;
+}
+
+.flatTable{  
+  width:100%;
+  border-collapse:collapse;  
+  font-weight:bold;
+  color:#333;
+}
+  
+  tr{
+    height:50px;
+    background:#181818;
+    border-bottom:rgba(0,0,0,.05) 1px solid;
+  }
+  
+  td{    
+    box-sizing:border-box;
+    text-align: center;
+    color:#f8efac ;
+    font-size:16px;
+    padding:20px 0 0;
+    width:50%;
+    
+  }
+
+.titleTr{
+  height:70px;  
+  color:#333333; 
+  background:#f3f3f3;  
+  border:0px solid;
+}
+.titleTr .titleTd h2{
+	color:#181818;
+}
+
+.headingTr{
+    height:30px;
+    background:#fff;
+    color:rgb(85, 85, 85); 
+    font-size:11pt;
+    border:0px solid;
+}
+
+.flatTable tr td .desc{
+	font-size:13px;
+	margin:0;
+	color: rgb(165, 165, 165);
+	padding:10px 5px;
+}
+.flatTable td a { 
+	padding: 0;
+	margin: 0;
+	text-decoration: none; 
+	-webkit-transition: background-color .4s linear, color .4s linear;
+	-moz-transition: background-color .4s linear, color .4s linear;
+	-o-transition: background-color .4s linear, color .4s linear;
+	-ms-transition: background-color .4s linear, color .4s linear;
+	transition: background-color .4s linear, color .4s linear;
+	color: #fff;
+}
+.flatTable td a:hover,
+.flatTable td a:focus,
+.flatTable td a.footer-link:hover,
+.flatTable td a.footer-link:focus{
+  text-decoration: none;
+  color:#f8efac;
 }
 /*--------------------------------------------------------------
 Media Queries 
@@ -522,6 +601,9 @@ Media Queries
 	.demo-1{
 		position: relative;
 	}
+	.section-bg-color{
+	padding-bottom:6%;
+	}
 	.video{
 		position:absolute;
 		top:10%;
@@ -544,9 +626,27 @@ Media Queries
 	.right{
 		width:40%;
 	}
+	.links .left{
+		float:left;
+		margin-top:8%;
+	}
+	.link .right{
+		float:right;
+	}
+	.links .right{
+	width:47%;
+	}
 	.container{
 		width:95%;
 		margin:0 auto;
+	}
+	.emoti-logo ul li{
+	display:inline-block;
+	width:35%;
+	padding: 0 5%;
+	}
+	.emoti-logo ul .small{
+	width:20%;
 	}
 
 	.main-tagline {
@@ -555,7 +655,7 @@ Media Queries
 	padding: 0;
 	color: #f9f1e9;
 	text-align: center;
-	top: 55%;
+	top: 58%;
 	left: 50%;
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);
